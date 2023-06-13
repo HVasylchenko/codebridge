@@ -1,0 +1,23 @@
+{
+    "development": {
+      "username": "mfdoors16",
+      "password": "",
+      "database": "Codebridge",
+      "host": "mfdoors16.database.windows.net",
+      "dialect": "mssql"
+    },
+    "test": {
+      "username": "mfdoors16",
+      "password": "",
+      "database": "Codebridge",
+      "host": "mfdoors16.database.windows.net",
+      "dialect": "mssql"
+    },
+    "production": {
+      "username": "mfdoors16",
+      "password": "",
+      "database": "Codebridge",
+      "host": "mfdoors16.database.windows.net",
+      "dialect": "mssql"
+    }
+  }

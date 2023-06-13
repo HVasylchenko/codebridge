@@ -1,19 +1,21 @@
-// npm install express sequelize mssql body-parser
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const { Sequelize, DataTypes } = require("sequelize");
+const config = require('./config.json')
+
+const DBName = config.development.database;
+const DBUserName = config.development.username;
+const DBPassword = config.development.password;
+const DBHost = config.development.host;
+const DBDialect = config.development.dialect;
 
 const app = express();
 const port = 80;
 
 // Configure database connection
-const sequelize = new Sequelize("Codebridge", "mfdoors16", "temSToF71", {
-// const sequelize = new Sequelize("Database name", "login", "passworod", {
-
-  host: "mfdoors16.database.windows.net",
-//   host: "",
-  dialect: "mssql",
+const sequelize = new Sequelize(DBName, DBUserName, DBPassword, {
+  host: DBHost,
+  dialect: DBDialect,
 });
 
 // Define the Dog model
